@@ -1,6 +1,6 @@
-Developed by hub-mgv attribution appreciated ❤️❤️❤️
+# Developed by hub-mgv attribution appreciated ❤️❤️❤️
 
-pathlra-aliaser
+### pathlra-aliaser
 
 Ultra-Fast, Zero-Dependency Path Alias Resolver for Node.js
 Engineered for sub-millisecond resolution, extreme performance, and seamless integration with zero runtime overhead in production.
@@ -92,4 +92,5 @@ License
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 pathlra-aliaser: where path resolution becomes invisible.
+
 
