@@ -65,9 +65,9 @@ const User = require("@models/User");
 ```
 Advanced Features
 Dynamic Aliases: Register runtime-resolved aliases.
-Add Custom Module Directory: aliaser.ap("./internal_modules");
-Bulk Alias Registration: aliaser.addAliases({ "@core": "./src/core" });
-Reset Everything: aliaser.rst(); clears cache, aliases, paths, and resets state.
+Add Custom Module Directory: `aliaser.ap("./internal_modules");`
+Bulk Alias Registration: `aliaser.addAliases({ "@core": "./src/core" });`
+Reset Everything: `aliaser.rst();` clears cache, aliases, paths, and resets state.
 Performance & Internals
 Cache: 10,000 entries by default
 Eviction: 1,000 least-used entries per batch
@@ -95,6 +95,7 @@ License
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 pathlra-aliaser: where path resolution becomes invisible.
+
 
 
 
