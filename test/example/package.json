@@ -1,0 +1,19 @@
+{
+    "name": "test-express",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "express": "^4.22.1",
+        "pathlra-aliaser": "^3.6.7"
+    },
+    "path_aliaser_": {
+        "@products": "./routes/products.js",
+        "@users": "./routes/users.js",
+        "@logger": "./utils/logger.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "license": "ISC",
+    "description": ""
+}

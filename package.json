@@ -1,0 +1,39 @@
+{
+  "name": "pathlra-aliaser",
+  "version": "3.6.8",
+  "description": "High-performance path alias resolver for Node.js with LRU caching and radix-tree optimization",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "path",
+    "alias",
+    "module",
+    "resolver",
+    "nodejs",
+    "performance",
+    "fast",
+    "ultra-fast",
+    "radix-tree",
+    "linear-scan",
+    "lru-cache",
+    "optimization",
+    "developer-tool",
+    "module-loader",
+    "sub-millisecond"
+  ],
+  "author": "hub-mgv",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hub-mgv/pathlra-aliaser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hub-mgv/pathlra-aliaser/issues"
+  },
+  "homepage": "https://github.com/hub-mgv/pathlra-aliaser#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
