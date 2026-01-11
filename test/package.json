@@ -1,7 +1,7 @@
 {
     "name": "test-express",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "test.js",
     "dependencies": {
       "express": "^4.22.1"
     },
@@ -13,4 +13,5 @@
       "@logger": "./utils/logger.js"
     }
   }
+
   
