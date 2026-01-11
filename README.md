@@ -13,7 +13,7 @@ pathlra-aliaser is a high-performance module loader enhancer built for speed, st
 const db = require("@services/database");
 ```
 
-…without any build step, transpilation, or runtime penalty.
+without any build step, transpilation, or runtime penalty.
 
 Key Features
 Sub-millisecond resolution: Resolves aliases in <0.1ms even under heavy load.
@@ -87,11 +87,12 @@ Teams enforcing standardized path conventions
 
 Not for: Frontend bundling, TypeScript-only projects (unless with ts-node), or projects preferring config files over package.json.
 Common Misconceptions
-"I need to call aa() for every alias." → No, package.json is enough.
-"It modifies global behavior unsafely." → Only patches Node.js resolver safely.
-"It slows down my app." → Benchmarks show faster resolution than manual paths after warm-up.
+- "I need to call aa() for every alias." → No, package.json is enough.
+- "It modifies global behavior unsafely." → Only patches Node.js resolver safely.
+- "It slows down my app." → Benchmarks show faster resolution than manual paths after warm-up.
 License
 
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 pathlra-aliaser: where path resolution becomes invisible.
+
