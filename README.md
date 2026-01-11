@@ -57,9 +57,9 @@ All configuration lives in package.json. Do not define aliases in .js files unle
 Paths are relative to the project root. _moduleDirectories extends Node.js’s search paths safely.
 
 Example Usage
+```js
 "use strict";
 require("pathlra-aliaser")(); // Must be called BEFORE any aliased requires
-```js
 const logger = require("@utils/logger");
 const User = require("@models/User");
 ```
@@ -95,6 +95,7 @@ License
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 pathlra-aliaser: where path resolution becomes invisible.
+
 
 
 
