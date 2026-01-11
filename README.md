@@ -34,7 +34,7 @@ Module Patching: Overrides Node.js’s resolver functions.
 Caching: Uses high-efficiency LRU cache with batch eviction.
 Path Propagation: Custom module directories injected into all active module paths.
 All happens once at startup with near-zero runtime cost.
-Installation
+### Installation
 ```bash
 npm install pathlra-aliaser
 ```
@@ -95,4 +95,5 @@ License
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 pathlra-aliaser: where path resolution becomes invisible.
+
 
