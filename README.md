@@ -74,30 +74,21 @@ Eviction: 1,000 least-used entries per batch
 Memory usage: <2 MB with 1,000+ aliases
 Initialization warning: Logs if init >20ms
 Inspect internals:
-```js
-const stats = require("pathlra-aliaser")._internal.getStats();
-console.log(stats);
-```
+
 Ideal For
 Large-scale Node.js applications
 Microservices
 Performance-critical systems
 Long-running processes
-Teams enforcing standardized path conventions
+Teams enforcing standardized path conventions.
 
 Not for: Frontend bundling, TypeScript-only projects (unless with ts-node), or projects preferring config files over package.json.
 Common Misconceptions
 - "I need to call aa() for every alias." → No, package.json is enough.
-- "It modifies global behavior unsafely." → Only patches Node.js resolver safely.
+- "It modifies global behavior unsafely" → Only patches Node.js resolver safely.
 - "It slows down my app." → Benchmarks show faster resolution than manual paths after warm-up.
 License
 
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 pathlra-aliaser: where path resolution becomes invisible.
-
-
-
-
-
-
