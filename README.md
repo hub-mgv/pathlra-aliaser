@@ -59,10 +59,10 @@ Paths are relative to the project root. _moduleDirectories extends Node.js’s s
 Example Usage
 "use strict";
 require("pathlra-aliaser")(); // Must be called BEFORE any aliased requires
-
+```js
 const logger = require("@utils/logger");
 const User = require("@models/User");
-
+```
 Advanced Features
 Dynamic Aliases: Register runtime-resolved aliases.
 Add Custom Module Directory: aliaser.ap("./internal_modules");
@@ -95,5 +95,6 @@ License
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 pathlra-aliaser: where path resolution becomes invisible.
+
 
 
