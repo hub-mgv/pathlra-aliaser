@@ -17,8 +17,8 @@ without any build step, transpilation, or runtime penalty.
 
 Key Features
 Sub-millisecond resolution: Resolves aliases in <0.1ms even under heavy load.
-Adaptive strategy engine: Linear scan for ≤100 aliases, radix tree for ≥100 aliases.
-Optimized LRU cache: Batch eviction (10% at a time) to avoid GC spikes.
+Adaptive strategy engine: Linear scan for `≤100 aliases`, radix tree for `≥100` aliases.
+Optimized LRU cache: Batch eviction `(10% at a time)` to avoid GC spikes.
 package.json-first design: Aliases live only in package.json.
 Dynamic alias support: Programmatic runtime path generation.
 Custom module directories: Extend require() to search in non-standard folders.
@@ -28,8 +28,8 @@ How It Works
 Initialization: Scans package.json for keys starting with path_aliaser.
 Alias Registration: Loads all alias → target mappings.
 Strategy Selection:
-<100 aliases → linear scan
-≥100 aliases → radix tree for O(k) prefix lookups
+`<100 aliases → linear scan`
+`≥100 aliases → radix tree for O(k) prefix lookups`
 Module Patching: Overrides Node.js’s resolver functions.
 Caching: Uses high-efficiency LRU cache with batch eviction.
 Path Propagation: Custom module directories injected into all active module paths.
@@ -75,11 +75,11 @@ Memory usage: <2 MB with 1,000+ aliases
 Initialization warning: Logs if init >20ms
 Inspect internals:
 
-Ideal For
-Large-scale Node.js applications
-Microservices
-Performance-critical systems
-Long-running processes
+Ideal For.
+Large-scale Node.js applications.
+Microservices.
+Performance-critical systems.
+Long-running processes.
 Teams enforcing standardized path conventions.
 
 Not for: Frontend bundling, TypeScript-only projects (unless with ts-node), or projects preferring config files over package.json.
