@@ -39,7 +39,7 @@ All happens once at startup with near-zero runtime cost.
 npm install pathlra-aliaser
 ```
 
-Configuration (via package.json)
+#### Configuration (via package.json)
 
 All configuration lives in package.json. Do not define aliases in .js files unless dynamic.
 ```json
@@ -95,6 +95,7 @@ License
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 pathlra-aliaser: where path resolution becomes invisible.
+
 
 
 
