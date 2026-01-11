@@ -56,31 +56,18 @@ without any build step, transpilation, or runtime penalty
 -  _Sub-millisecond_ resolution: Resolves aliases in <0.1ms even under heavy load.
 
 - Adaptive strategy engine:
-
 - Linear scan for ≤100 aliases
-
 - Radix tree for ≥100 aliases
-
 - Optimized LRU cache: Batch eviction (10% at a time) to avoid GC spikes.
-
 - Package.json-first design: Aliases live only in package.json.
-
 - Dynamic alias support: Programmatic runtime path generation.
-
 - Custom module directories: Extend require() to search in non-standard folders.
-
 - Zero dependencies: Pure Node.js, fully compatible with `"use strict"`.
-
 - Minimal memory footprint: Optimized data structures and memory-aware algorithms.
-
 - Hot-reload support (optional) for development.
-
 - Verbose/debug mode for tracing resolution steps.
-
 - TypeScript paths auto-generation.
-
 - Friendly error messages & config validation.
-
 - Default presets: `@root`, `@src` for plug-and-play.
 
   
@@ -298,3 +285,4 @@ aliaser.addAliases({ "@core": "./src/core" });
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 `pathlra-aliaser`: where path resolution becomes invisible.
+
