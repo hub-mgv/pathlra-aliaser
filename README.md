@@ -54,7 +54,6 @@ without any build step, transpilation, or runtime penalty
   
 
 -  _Sub-millisecond_ resolution: Resolves aliases in <0.1ms even under heavy load.
-
 - Adaptive strategy engine:
 - Linear scan for ≤100 aliases
 - Radix tree for ≥100 aliases
@@ -285,4 +284,5 @@ aliaser.addAliases({ "@core": "./src/core" });
 MIT © hub-mgv
 Engineered for speed. Built for scale. Designed to disappear.
 `pathlra-aliaser`: where path resolution becomes invisible.
+
 
