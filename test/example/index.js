@@ -1,7 +1,7 @@
 "use strict";
 
 const pathlra_aliaser = require("pathlra-aliaser");
-pathlra_aliaser(); // 
+pathlra_aliaser();
 
 const express = require("express");
 const e = express();
@@ -15,4 +15,5 @@ e.use("/products", productsRoutes);
 
 e.listen(3000, () => {
   logs.log("Server http://localhost:3000");
+
 });
