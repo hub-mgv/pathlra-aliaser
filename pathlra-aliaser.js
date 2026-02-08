@@ -299,7 +299,17 @@ Mod._resolveFilename = function (req, prnt, isM, opts) {
 
   let rr = req;
   let mr = null;
-
+  
+  // Added support for underscore-based alias resolution / , _
+  if (!req.includes("/") && req.includes("_")) { 
+    const parts = req.split("_");
+    const aliasCandidate = "_" + parts[1];
+    if (am.has(aliasCandidate)) {
+      const rest = parts.slice(2).join("_");
+      req = aliasCandidate + (rest ? "/" + rest : "");
+    }
+  }
+  
   if (ha) {
     if (ac) {
       opt();
@@ -630,3 +640,4 @@ module.exports = Object.assign(init, {
     },
   },
 });
+
