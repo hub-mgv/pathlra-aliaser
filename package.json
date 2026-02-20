@@ -2,9 +2,9 @@
   "name": "pathlra-aliaser",
   "version": "4.8.0",
   "description": "High-performance path alias resolver for Node.js with LRU caching and radix-tree optimization",
-  "main": "test.js",
+  "main": "index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node index.js"
   },
   "keywords": [
     "path",
@@ -37,3 +37,4 @@
     "node": ">=14.0.0"
   }
 }
+
