@@ -268,11 +268,6 @@ class RadixTree {
   }
 }
 
-
-
-
-
-
 // Global state
 const customPathsSet = new Set(); // Custom paths
 const aliasMap = new Map(); // Aliases
@@ -307,33 +302,6 @@ Module._resolveFilename = function (request, parent, isMain, options) {
 
   let resolvedRequest = request;
   let matchResult = null;
-
-  /**
-   * ------------------------------------------------------------
-   * Modified Version Notice
-   * ------------------------------------------------------------
-   * This file has been modified from the original "pathlra-aliaser"
-   * library by hub-mgv
-   *
-   * Modifications made by [Mazarita Bot]
-   * Year 2026
-   *
-   * Summary of changes
-   * - Added support for underscore-based alias resolution
-   *
-   * These changes are distributed under the same MIT License.
-   * ------------------------------------------------------------
-   */
-  if (!request.includes("/") && request.includes("_")) {
-    // Added support for underscore-based alias resolution
-    const parts = request.split("_");
-    const aliasCandidate = "_" + parts[1];
-    if (aliasMap.has(aliasCandidate)) {
-      const rest = parts.slice(2).join("_");
-      request = aliasCandidate + (rest ? "/" + rest : "");
-    }
-  }
-  // MIT License
 
   if (hasAliases) {
     if (aliasesChanged) {
