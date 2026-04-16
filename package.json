@@ -1,10 +1,6 @@
 {
   "name": "pathlra-aliaser",
-<<<<<<< HEAD
   "version": "4.6.14",
-=======
-  "version": "4.6.12",
->>>>>>> 6637771615c12546f8c1c83f24deaa1bd1ba0e96
   "description": "High-performance path alias resolver for Node.js with LRU caching and radix-tree optimization",
   "main": "index.js",
   "scripts": {
@@ -27,7 +23,7 @@
     "module-loader",
     "sub-millisecond"
   ],
-<<<<<<< HEAD
+
   "author": "mgv-hub",
   "license": "MIT",
   "repository": {
@@ -38,18 +34,7 @@
     "url": "https://github.com/mgv-hub/pathlra-aliaser/issues"
   },
   "homepage": "https://github.com/mgv-hub/pathlra-aliaser#readme",
-=======
-  "author": "hub-mgv",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hub-mgv/pathlra-aliaser.git"
-  },
-  "bugs": {
-    "url": "https://github.com/hub-mgv/pathlra-aliaser/issues"
-  },
-  "homepage": "https://github.com/hub-mgv/pathlra-aliaser#readme",
->>>>>>> 6637771615c12546f8c1c83f24deaa1bd1ba0e96
+  
   "engines": {
     "node": ">=14.0.0"
   }
